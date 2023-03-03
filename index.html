@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.0/dist/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <section class="about__us" id="dot">
+      <header class="header">
+        <div class="header__logo" id="logo">
+          <a href="#header">
+            <img src="./images/Logo (1).png" alt="Logo" />
+          </a>
+        </div>
+
+        <ul class="header__nav container__links" id="container__links">
+          <li class="header__item">
+            <a href="#header"
+              ><img
+                src="./images/Ellipse 1.png"
+                alt="filled"
+                class="header__filled"
+                id="first__filled"
+              />
+              <img
+                src="./images/Ellipse 2.png"
+                alt="unfilled"
+                class="header__unfilled"
+                id="first__unfilled"
+              />
+              <p>About Us</p></a
+            >
+          </li>
+          <li class="header__item">
+            <a class="item__a" href="#projects"
+              ><img
+                src="./images/Ellipse 1.png"
+                alt="filled"
+                class="header__filled"
+              />
+              <img
+                src="./images/Ellipse 2.png"
+                alt="unfilled"
+                class="header__unfilled"
+              />
+              <p>Projects</p></a
+            >
+          </li>
+          <li class="header__item">
+            <a href="#news"
+              ><img
+                src="./images/Ellipse 1.png"
+                alt="filled"
+                class="header__filled"
+              />
+              <img
+                src="./images/Ellipse 2.png"
+                alt="unfilled"
+                class="header__unfilled"
+              />
+              <p>News</p>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#contact">
+              <img
+                src="./images/Ellipse 1.svg"
+                alt="filled"
+                class="header__filled"
+              />
+              <img
+                src="./images/Ellipse 2.svg"
+                alt="unfilled"
+                class="header__unfilled"
+              />
+              <p>Contact</p></a
+            >
+          </li>
+        </ul>
+
+        <div class="header__link">
+          <a href="#" target="_blank"
+            ><img src="./images/Group 3.png" alt="facebook"
+          /></a>
+          <a href="#" target="_blank"
+            ><img src="./images/Group 2.png" alt="twitter"
+          /></a>
+          <a href="#" target="_blank"
+            ><img src="./images/Group 1.png" alt="instagram"
+          /></a>
+        </div>
+      </header>
+      <div class="container__menu" id="container__menu">
+        <div id="menu__logo" class="menu__logo"></div>
+        <div class="menu__logo"></div>
+        <div class="menu__logo"></div>
+      </div>
+      <div class="header__wrapper" id="header">
+        <p class="header__title">SIMPLE & MODERN</p>
+        <p class="header__text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+        <div class="arrow">
+          <a href="#projects"><img src="./images/Arrow.png" alt="Arrow" /></a>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li>
+              <a
+                onclick="changeFirst()"
+                href="#header"
+                class="dot"
+                data-scroll="header"
+                id="first__dot"
+              >
+                <span>Change</span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                onclick="changeSecond()"
+                href="#header"
+                class="dot"
+                data-scroll="header"
+              >
+                <span>Change</span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                onclick="changeThird()"
+                href="#header"
+                class="dot"
+                data-scroll="header"
+              >
+                <span>Change</span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                onclick="changeFourth()"
+                href="#header"
+                class="dot"
+                data-scroll="heeader"
+              >
+                <span>Change</span>
+              </a>
+            </li>
+
+            <li class="li">
+              <a
+                onclick="changeFifth()"
+                href="#header"
+                class="dot unactive"
+                data-scroll="header"
+              >
+                <span>Change</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+  </body>
+  <main>
+    <section class="void"></section>
+    <!-- <div>
+      <img src="./images/Line 1.png" class="border" alt="" />
+    </div> for img instead of tag hr -->
+    <section class="projects">
+      <div class="projects__title">
+        <hr />
+        <h2>what we do</h2>
+      </div>
+      <div class="projects__wrapper" id="projects"></div>
+      <div class="block1">
+        <div class="block1__img">
+          <img src="./images/first-image.png" class="block1__photo" alt="" />
+          <img
+            src="./images/second-image.png"
+            class="block1__background"
+            alt="block1__background"
+          />
+        </div>
+        <div class="block1__descr">
+          <div class="block1__subtitle">
+            <h4>one world</h4>
+          </div>
+          <div class="block1__title">
+            <h3>trade center</h3>
+          </div>
+          <div class="block1__text">
+            <p>
+              Increasing prosperity in our lives can be accomplished by having
+              the right frame of mind. The truth is, our thoughts are very
+              powerful.
+            </p>
+          </div>
+          <button class="block1__btn">
+            <p>more details</p>
+          </button>
+          <div class="block1__location">
+            <img src="./images/location.png" alt="location" />
+            <p>New York City, United States - 1776 feet</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="block2">
+        <div class="block2__img">
+          <img
+            src="./images/front-photo.png"
+            class="block2__back"
+            alt="front"
+          />
+          <img
+            src="./images/back-photo.png"
+            alt="background"
+            class="block2__photo"
+          />
+        </div>
+        <div class="block2__descr">
+          <div class="block2__subtitle">
+            <h4>international</h4>
+          </div>
+          <div class="block2__title">
+            <h3>Commerce Centre</h3>
+          </div>
+          <div class="block2__text">
+            <p>
+              Successful businesses have many things in common, today we’ll look
+              at the big ‘R’ of recognition and how a digital advertising
+              network may help.
+            </p>
+          </div>
+          <button class="block2__btn">
+            <p>more details</p>
+          </button>
+          <div class="block2__location">
+            <img
+              class="location__img"
+              src="./images/location.png"
+              alt="location"
+            />
+            <p class="location__text">Hong Kong - 1588 feet</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="news__section" id="news">
+      <div class="news">
+        <div class="news__main-title">
+          <hr class="news__line" />
+          <h2>latest news</h2>
+        </div>
+        <div class="news__slider">
+          <div class="news__card first__card">
+            <img src="./images/news1.png" alt="news" />
+            <h3 class="news__title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+            <p class="news__description">
+              Free directories: directories are perfect for customers that are
+              searching for Loremipsumdolor sit amet.
+            </p>
+            <div class="news__author">
+              <img
+                class="author__img"
+                src="./images/author1.png"
+                alt="author"
+              />
+              <div class="author__descr">
+                <p class="author__name">ALJA BRUN</p>
+                <div class="author__date">20 Jan 2020</div>
+              </div>
+            </div>
+          </div>
+          <div class="news__card">
+            <img src="./images/news2.png" alt="news" />
+            <h3 class="news__title">EFFECTIVE ADVERTISING POINTERS.</h3>
+            <p class="news__description">
+              Having a home based business is a wonderful asset to your life...
+            </p>
+            <div class="news__author">
+              <img
+                class="author__img"
+                src="./images/author2.png"
+                alt="author"
+              />
+              <div class="author__descr">
+                <div class="author__name">
+                  <p>DOMINIC FREEMAN</p>
+                </div>
+                <div class="author__date">
+                  <p>13 Dec 2019</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="news__card">
+            <img src="./images/news3.png" alt="news" />
+            <h3 class="news__title">HYPNOTIZE YOURSELF INTO THE GHOST.</h3>
+            <p class="news__description">
+              There are many things that are important to catalog design...
+            </p>
+            <div class="news__author">
+              <img
+                class="author__img"
+                src="./images/author3.png"
+                alt="author"
+              />
+              <div class="author__descr">
+                <p class="author__name">ALICE WARD</p>
+                <div class="author__date">30 Nov 2019</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gallery" id="section4">
+      <div class="gallery__title">
+        <hr />
+        <h2>gallery</h2>
+      </div>
+      <div class="gallery__inner">
+        <div class="gallery__main main">
+          <img
+            onclick="changeImgMain()"
+            id="main"
+            src="./images/gallery1.png"
+            alt="Big image"
+          />
+        </div>
+        <div class="gallery__cards">
+          <div onclick="changeImg1()" class="gallery__card">
+            <img src="./images/gallery2.png" alt="Small image" />
+          </div>
+          <div onclick="changeImg2()" class="gallery__card">
+            <img src="./images/gallery3.png" alt="Small image" />
+          </div>
+          <div onclick="changeImg3()" class="gallery__card">
+            <img src="./images/gallery4.png" alt="Small image" />
+          </div>
+          <div onclick="changeImg4()" class="gallery__card">
+            <img
+              class="gallery__card-img"
+              src="./images/gallery5.png"
+              alt="Small image"
+            />
+          </div>
+        </div>
+        <button class="gallery__btn">
+          <p>see more</p>
+        </button>
+      </div>
+    </section>
+    <section class="map" id="contact">
+      <div class="map__inner">
+        <img class="map__img" src="./images/Map.png" alt="map" />
+
+        <div class="getintouch" id="getintouch">
+          <div class="getintouch__title">
+            <hr />
+            <h2>get in touch</h2>
+          </div>
+          <div class="getintouch__left">
+            <p>
+              <img
+                src="./images/location-dot-solid.svg"
+                xlink:href=""
+                alt="Location"
+              />
+              91 Nolan extensions suite 670
+            </p>
+            <p>
+              <img
+                src="./images/phone-solid.svg"
+                xlink:href="images/phone.svg"
+                alt="Phone"
+              />
+              <a href="tel:+001356-356-356-356">+001356-356-356-356</a>
+            </p>
+            <p>
+              <img
+                src="./images/inbox-solid.svg"
+                xlink:href="images/email.svg"
+                alt="Mail"
+              />
+              <a href="mailto:gahuy93@gmail.com">monte@gmail.com</a>
+            </p>
+            <p>
+              <img
+                src="./images/clock-regular.svg"
+                xlink:href="images/time.svg"
+                alt="Time"
+              />
+              From 07:05 AM to 19:30 PM
+            </p>
+          </div>
+          <div class="getintouch__right">
+            <form action="#" class="getintouch__form" method="POST">
+              <input
+                class="getintouch__name"
+                type="text"
+                name="name_surname"
+                id="name_surname"
+                placeholder="Name"
+              />
+              <input
+                class="getintouch__email"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+              />
+              <input class="getintouch__submit" type="submit" value="SUBMIT" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__logo">
+          <a href="#" target="_blank">
+            <img src="./images/Logo (1).png" alt="Monticello"
+          /></a>
+        </div>
+        <div class="footer__links">
+          <a href="#" class="footer__link" target="_blank">
+            <img src="./images/Group 3.png" alt="facebook" />
+          </a>
+          <a href="#" class="footer__link" target="_blank">
+            <img src="./images/Group 2.png" alt="twitter" />
+          </a>
+          <a href="#" class="footer__link" target="_blank">
+            <img src="./images/Group 1.png" alt="instagram" />
+          </a>
+        </div>
+        <div class="footer__copy">
+          <p>Copyrights &copy; 2023 Monticello</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <script src="./js/script.js"></script>
+</html>
